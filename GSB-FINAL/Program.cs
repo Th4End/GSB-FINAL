@@ -16,6 +16,12 @@ namespace GSB_FINAL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            ModeleM1.init();
+            ModeleM2.init();
+            ModeleM2.init();
+            ModeleM1.
+
+
             Application.Run(new FMenu());
         }
     }
