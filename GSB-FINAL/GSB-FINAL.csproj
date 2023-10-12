@@ -112,6 +112,7 @@
     <Compile Include="MEDICAMENT.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model.cs" />
     <Compile Include="Model_GSB.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
