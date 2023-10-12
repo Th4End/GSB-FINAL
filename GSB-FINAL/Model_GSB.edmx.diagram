@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4d2d98ca4ea74d14a9ad5a629bc09f32" Name="Diagram1" ZoomLevel="72">
+        <EntityTypeShape EntityType="ALaSmeneProModel.Etat" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ALaSmeneProModel.FAMILLE" Width="1.5" PointX="6" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ALaSmeneProModel.fichefrais" Width="1.5" PointX="5.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ALaSmeneProModel.FraisForfait" Width="1.5" PointX="8.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ALaSmeneProModel.Laboratoire" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ALaSmeneProModel.LigneFraisForfait" Width="1.5" PointX="10.5" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ALaSmeneProModel.LigneFraisHorsForfait" Width="1.5" PointX="7.5" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="ALaSmeneProModel.MEDECIN" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ALaSmeneProModel.MEDICAMENT" Width="1.5" PointX="8.25" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="ALaSmeneProModel.MOTIF" Width="1.5" PointX="6" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ALaSmeneProModel.OFFRIR" Width="1.5" PointX="10.5" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ALaSmeneProModel.RAPPORT" Width="1.5" PointX="8.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ALaSmeneProModel.Region" Width="1.5" PointX="7.5" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ALaSmeneProModel.Secteur" Width="1.5" PointX="5.25" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ALaSmeneProModel.SPECIALITE" Width="1.5" PointX="3.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ALaSmeneProModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ALaSmeneProModel.Visiteur" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <AssociationConnector Association="ALaSmeneProModel.FK__fichefrai__idEta__6477ECF3" ManuallyRouted="false" />
+        <AssociationConnector Association="ALaSmeneProModel.medicament_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="ALaSmeneProModel.FK__fichefrai__idVis__656C112C" ManuallyRouted="false" />
+        <AssociationConnector Association="ALaSmeneProModel.FK__LigneFraisForfai__693CA210" ManuallyRouted="false" />
+        <AssociationConnector Association="ALaSmeneProModel.FK__LigneFraisHorsFo__6FE99F9F" ManuallyRouted="false" />
+        <AssociationConnector Association="ALaSmeneProModel.FK__LigneFrai__idFra__6A30C649" ManuallyRouted="false" />
+        <AssociationConnector Association="ALaSmeneProModel.FK_Laboratoire" ManuallyRouted="false" />
+        <AssociationConnector Association="ALaSmeneProModel.medecin_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="ALaSmeneProModel.rapport_fk2" ManuallyRouted="false" />
+        <AssociationConnector Association="ALaSmeneProModel.offrir_fk2" ManuallyRouted="false" />
+        <AssociationConnector Association="ALaSmeneProModel.rapport_fk3" ManuallyRouted="false" />
+        <AssociationConnector Association="ALaSmeneProModel.offrir_fk1" ManuallyRouted="false" />
+        <AssociationConnector Association="ALaSmeneProModel.rapport_fk1" ManuallyRouted="false" />
+        <AssociationConnector Association="ALaSmeneProModel.FK_SECTEUR" ManuallyRouted="false" />
+        <AssociationConnector Association="ALaSmeneProModel.FK_VISITEUR" ManuallyRouted="false" />
+        <AssociationConnector Association="ALaSmeneProModel.FK_VISITEURSECTEUR" ManuallyRouted="false" />
+        <AssociationConnector Association="ALaSmeneProModel.Travailler" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
