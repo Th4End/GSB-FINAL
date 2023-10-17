@@ -17,6 +17,7 @@ namespace GSB_FINAL
         public static void init()
         {
             maConnexion = new ALaSmeneProEntities();
+            chargeTestVisiteurConnecte();
         }
         public static List<RAPPORT> listrapport()
         {
@@ -42,5 +43,14 @@ namespace GSB_FINAL
         {
             return maConnexion.Secteur.ToList();
         }
+        public static List<MOTIF> lesmotifs()
+        {
+            return maConnexion.MOTIF.ToList();
+        }
+        public static List<OFFRIR> lesoffres()
+        {
+            return maConnexion.OFFRIR.ToList();
+        }
+
     }
 }

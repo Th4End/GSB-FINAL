@@ -16,18 +16,14 @@ namespace GSB_FINAL
         {
             leVisiteurConnecte = maConnexion.Visiteur.Where(x => x.idVisiteur == "??????").ToList()[0];
         }
-        private static void init()
+        public static void init()
         { 
             maConnexion = new ALaSmeneProEntities();
             chargeTestVisiteurConnecte();
         }
-        public static List<FAMILLE> listfamille()
+        public static List<Region> listregion()
         {
-            return maConnexion.FAMILLE.ToList();
-        }
-        public static List<MOTIF> listmotif()
-        {
-            return maConnexion.MOTIF.ToList();
+            return maConnexion.Region.ToList();
         }
         public static List<Visiteur> listvisiteur()
         {

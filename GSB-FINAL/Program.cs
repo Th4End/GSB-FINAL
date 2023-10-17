@@ -18,8 +18,8 @@ namespace GSB_FINAL
             Application.SetCompatibleTextRenderingDefault(false);
             ModeleM1.init();
             ModeleM2.init();
-            ModeleM2.init();
-            ModeleM1.
+            ModeleM3.init();
+            ModeleConnexion.init();
 
 
             Application.Run(new FMenu());
