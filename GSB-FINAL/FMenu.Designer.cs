@@ -32,16 +32,18 @@
             this.gestionVisiteursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mission2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mission3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionDesVisiteursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gestionVisiteursToolStripMenuItem});
+            this.gestionVisiteursToolStripMenuItem,
+            this.gestionDesVisiteursToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(783, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -69,11 +71,18 @@
             this.mission3ToolStripMenuItem.Text = "Mission 3";
             this.mission3ToolStripMenuItem.Click += new System.EventHandler(this.mission3ToolStripMenuItem_Click);
             // 
+            // gestionDesVisiteursToolStripMenuItem
+            // 
+            this.gestionDesVisiteursToolStripMenuItem.Name = "gestionDesVisiteursToolStripMenuItem";
+            this.gestionDesVisiteursToolStripMenuItem.ShowShortcutKeys = false;
+            this.gestionDesVisiteursToolStripMenuItem.Size = new System.Drawing.Size(126, 20);
+            this.gestionDesVisiteursToolStripMenuItem.Text = "Gestion des visiteurs";
+            // 
             // FMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(783, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FMenu";
@@ -91,6 +100,7 @@
         private System.Windows.Forms.ToolStripMenuItem gestionVisiteursToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mission2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mission3ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gestionDesVisiteursToolStripMenuItem;
     }
 }
 
