@@ -10,7 +10,7 @@ namespace GSB_FINAL
     {
         public static ALaSmeneProEntities maConnexion;
         private static Visiteur leVisiteurConnecte;
-        private static void chargeTestVisiteurConnecte()
+        private static void chargeTestVisiteurConnecte()//pour gérer tant que la connexion est pas faite 
         {
             leVisiteurConnecte = maConnexion.Visiteur.Where(x => x.idVisiteur == "??????").ToList()[0];
         }
