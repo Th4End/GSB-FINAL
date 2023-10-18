@@ -19,7 +19,7 @@ namespace GSB_FINAL
             ModeleM1.init();
             ModeleM2.init();
             ModeleM2.init();
-            ModeleM1.
+            
 
 
             Application.Run(new FMenu());
