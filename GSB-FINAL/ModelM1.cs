@@ -16,7 +16,7 @@ namespace GSB_FINAL
         {
             leVisiteurConnecte = maConnexion.Visiteur.Where(x => x.idVisiteur == "??????").ToList()[0];
         }
-        private static void init()
+        public static void init()
         { 
             maConnexion = new ALaSmeneProEntities();
             chargeTestVisiteurConnecte();

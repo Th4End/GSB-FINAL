@@ -156,6 +156,9 @@
     <Compile Include="Visiteur.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FConnexion.resx">
+      <DependentUpon>FConnexion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FGestionsVisiteurs.resx">
       <DependentUpon>FGestionsVisiteurs.cs</DependentUpon>
     </EmbeddedResource>

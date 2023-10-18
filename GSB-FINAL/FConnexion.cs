@@ -16,5 +16,40 @@ namespace GSB_FINAL
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FConnexion_Load(object sender, EventArgs e)
+        {
+
+        }
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            {
+                string username = txtUsername.Text;
+                string password = txtPassword.Text;
+
+
+                if (IsValidUser(username, password))
+                {
+                    MessageBox.Show("Connexion réussie !");
+
+                }
+                else
+                {
+                    MessageBox.Show("Échec de la connexion. Veuillez vérifier vos informations.");
+                }
+            }
+
+             bool IsValidUser(string username, string password)
+            {
+
+                return username == "utilisateur" && password == "motdepasse";
+            }
+        }
     }
 }
