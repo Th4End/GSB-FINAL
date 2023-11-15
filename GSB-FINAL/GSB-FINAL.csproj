@@ -123,6 +123,7 @@
     <Compile Include="Mission3_Renseigner.Designer.cs">
       <DependentUpon>Mission3_Renseigner.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModeleConnexion.cs" />
     <Compile Include="ModeleM2.cs" />
     <Compile Include="ModeleM3.cs" />
     <Compile Include="ModelM1.cs" />
@@ -167,6 +168,9 @@
     <Compile Include="Visiteur.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FConnexion.resx">
+      <DependentUpon>FConnexion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FGestionsVisiteurs.resx">
       <DependentUpon>FGestionsVisiteurs.cs</DependentUpon>
     </EmbeddedResource>

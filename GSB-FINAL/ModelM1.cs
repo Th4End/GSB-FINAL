@@ -12,14 +12,16 @@ namespace GSB_FINAL
         private static ALaSmeneProEntities maConnexion;
         private static Visiteur leVisiteurConnecte;
         private static int Action;//1 ajout et 2 modif
+<<<<<<< HEAD
         private static void chargeTestVisiteurConnecte()
         {
             leVisiteurConnecte = maConnexion.Visiteur.Where(x => x.idVisiteur == "??????").ToList()[0];
         }
+=======
+>>>>>>> Connexion_Eliazid
         public static void init()
         { 
             maConnexion = new ALaSmeneProEntities();
-            chargeTestVisiteurConnecte();
         }
         public static List<FAMILLE> listfamille()
         {
