@@ -12,5 +12,18 @@ namespace GSB_FINAL
 {
     public partial class FConnexion : Form
     {
+        public FConnexion()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            infoconnection.Text = ModeleConnexion.connex(identifiant.Text, mdp.Text);
+            if (ModeleConnexion.connexValid)
+            {
+                MessageBox.Show("Bienvenue"+" "+ ModeleConnexion.LeVisiteurConnecte.prenom);
+            }
+        }
     }
 }
