@@ -14,7 +14,7 @@ namespace GSB_FINAL
         private static int Action;//1 ajout et 2 modif
         private static void chargeTestVisiteurConnecte()
         {
-            leVisiteurConnecte = maConnexion.Visiteur.Where(x => x.idVisiteur == "??????").ToList()[0];
+            leVisiteurConnecte = maConnexion.Visiteur.Where(x => x.idVisiteur == "?????").ToList()[0];
         }
         public static void init()
 
