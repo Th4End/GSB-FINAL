@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace GSB_FINAL
 {
-    public partial class FMission3 : Form
+    public partial class Mission3_Renseigner : Form
     {
-        public FMission3()
+        public Mission3_Renseigner()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Mission3_Renseigner Mission3_R = new Mission3_Renseigner();
-            Mission3_R.Show();
         }
     }
 }
