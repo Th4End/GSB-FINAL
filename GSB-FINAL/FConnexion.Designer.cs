@@ -65,6 +65,7 @@
             // 
             this.mdp.Location = new System.Drawing.Point(365, 267);
             this.mdp.Name = "mdp";
+            this.mdp.PasswordChar = '*';
             this.mdp.Size = new System.Drawing.Size(115, 20);
             this.mdp.TabIndex = 3;
             // 

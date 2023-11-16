@@ -22,8 +22,16 @@ namespace GSB_FINAL
             infoconnection.Text = ModeleConnexion.connex(identifiant.Text, mdp.Text);
             if (ModeleConnexion.connexValid)
             {
-                MessageBox.Show("Bienvenue"+" "+ ModeleConnexion.LeVisiteurConnecte.prenom);
+                //MessageBox.Show("Bienvenue"+" "+ ModeleConnexion.LeVisiteurConnecte.prenom);
+                System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
+                t.Start();
+                this.Close();
             }
+        }
+
+        public static void ThreadProc()
+        {
+            Application.Run(new FMenu());
         }
     }
 }
