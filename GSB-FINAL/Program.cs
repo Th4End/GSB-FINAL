@@ -19,14 +19,10 @@ namespace GSB_FINAL
             ModeleM1.init();
             ModeleM2.init();
             ModeleM3.init();
-<<<<<<< HEAD
-            Application.Run(new FMenu());
-=======
             ModeleConnexion.init();
 
 
-            Application.Run(new FConnexion());
->>>>>>> Connexion_Eliazid
+            Application.Run(new FMenu());
         }
     }
 }

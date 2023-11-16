@@ -22,7 +22,7 @@ namespace GSB_FINAL
             infoconnection.Text = ModeleConnexion.connex(identifiant.Text, mdp.Text);
             if (ModeleConnexion.connexValid)
             {
-                MessageBox.Show("Bienvenue"+" "+ ModeleConnexion.LeVisiteurConnecte.prenom);
+               MessageBox.Show("Bienvenue"+" "+ ModeleConnexion.LeVisiteurConnecte.prenom);
             }
         }
     }
