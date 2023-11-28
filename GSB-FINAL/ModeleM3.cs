@@ -25,5 +25,6 @@ namespace GSB_FINAL
         {
             return maConnexion.Visiteur.ToList();
         }
+  
     }
 }
