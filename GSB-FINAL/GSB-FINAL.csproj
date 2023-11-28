@@ -177,6 +177,9 @@
     <EmbeddedResource Include="FMenu.resx">
       <DependentUpon>FMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FMission2.resx">
+      <DependentUpon>FMission2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FMission3.resx">
       <DependentUpon>FMission3.cs</DependentUpon>
     </EmbeddedResource>
