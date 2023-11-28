@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace GSB_FINAL
 {
@@ -50,10 +51,79 @@ namespace GSB_FINAL
         {
             PanelFiltre.Visible = CheckFiltre.Checked;
         }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBoxMois_CheckedChanged(object sender, EventArgs e)
+        {
+            {
+                if (checkBoxMois.Checked)
+                {
+                    // Si CheckBox1 est coché, décochez les autres
+                    checkBoxPeriode.Checked = false;
+                    checkBoxEtat.Checked = false;
+                }
+            }
+        }
+
+        private void checkBoxPeriode_CheckedChanged(object sender, EventArgs e)
+        {
+            {
+                if (checkBoxPeriode.Checked)
+                {
+                    // Si CheckBox1 est coché, décochez les autres
+                    checkBoxMois.Checked = false;
+                    checkBoxEtat.Checked = false;
+                }
+            }
+        }
+
+        private void checkBoxEtat_CheckedChanged(object sender, EventArgs e)
+        {
+            {
+                if (checkBoxEtat.Checked)
+                {
+                    // Si CheckBox1 est coché, décochez les autres
+                    checkBoxPeriode.Checked = false;
+                    checkBoxMois.Checked = false;
+                }
+            }
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+
+            if (dateTimePicker1.Value >= dateTimePicker2.Value)
+            {
+                MessageBox.Show("Impossible que la première date soit inférieur !");
+            }
+        }
+
+      
+
+        private void comboBox1_TextChanged(object sender, EventArgs e)
+        {
+            string selectedText = comboBox1.Text;
+            MessageBox.Show(comboBox1.Text);
+        }
+    }
     }
    /* public void bsNation_CurrentChanged(object sender, EventArgs e)
 
     {
      
     }*/
-}
+
