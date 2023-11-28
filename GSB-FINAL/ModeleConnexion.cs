@@ -53,6 +53,7 @@ namespace GSB_FINAL
                     leVisiteurConnecte = user[0];
                     string mdph = GetMd5Hash(mdp);
                     string md = LeVisiteurConnecte.password.Substring(2).ToString();
+                    
                     if (String.Equals(mdph, LeVisiteurConnecte.password.Substring(2).ToString(),StringComparison.CurrentCultureIgnoreCase))
                     {
                         msg = "Bienvenue"+" "+leVisiteurConnecte.prenom;

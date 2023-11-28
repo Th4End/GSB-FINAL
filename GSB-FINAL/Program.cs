@@ -22,7 +22,7 @@ namespace GSB_FINAL
             ModeleConnexion.init();
 
 
-            Application.Run(new FMenu());
+            Application.Run(new FConnexion());
         }
     }
 }
