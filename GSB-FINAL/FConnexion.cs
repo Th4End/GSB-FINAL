@@ -16,5 +16,22 @@ namespace GSB_FINAL
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            infoconnection.Text = ModeleConnexion.connex(identifiant.Text, mdp.Text);
+            if (ModeleConnexion.connexValid)
+            {
+                //MessageBox.Show("Bienvenue"+" "+ ModeleConnexion.LeVisiteurConnecte.prenom);
+                System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
+                t.Start();
+                this.Close();
+            }
+        }
+
+        public static void ThreadProc()
+        {
+            Application.Run(new FMenu());
+        }
     }
 }
