@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -27,6 +28,26 @@ namespace GSB_FINAL
         public static List<Visiteur> listvisiteur()
         {
             return maConnexion.Visiteur.ToList();
+        }
+        public static bool modifinfos(string nom, string prenom, string ville, string rue, string cp)
+        {
+            bool vretour = true;
+            try
+            {
+                ModeleConnexion.LeVisiteurConnecte.nom = nom;
+                ModeleConnexion.LeVisiteurConnecte.prenom = prenom;
+                ModeleConnexion.LeVisiteurConnecte.ville = ville;
+                ModeleConnexion.LeVisiteurConnecte.rue = rue;
+                ModeleConnexion.LeVisiteurConnecte.cp = cp;
+                ModeleConnexion.maConnexion.SaveChanges();
+
+            }
+            catch (Exception ex)
+            {
+                vretour = false;
+            }
+            return vretour;
+
         }
     }
 }

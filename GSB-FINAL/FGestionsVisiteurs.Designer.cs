@@ -31,13 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMission1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.bsGestionvisiteur = new System.Windows.Forms.BindingSource(this.components);
             this.consulterMesInfosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cONSULTERMESRESPONSABILIT2SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mofierLeModDePasseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualiserLesVisiteursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.perSecteurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parRegionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bsGestionvisiteur = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsGestionvisiteur)).BeginInit();
@@ -55,10 +55,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // bsGestionvisiteur
-            // 
-            this.bsGestionvisiteur.CurrentChanged += new System.EventHandler(this.bsGestionvisiteur_CurrentChanged);
             // 
             // consulterMesInfosToolStripMenuItem
             // 
@@ -91,15 +87,19 @@
             // perSecteurToolStripMenuItem
             // 
             this.perSecteurToolStripMenuItem.Name = "perSecteurToolStripMenuItem";
-            this.perSecteurToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.perSecteurToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.perSecteurToolStripMenuItem.Text = "par secteur";
             this.perSecteurToolStripMenuItem.Click += new System.EventHandler(this.perSecteurToolStripMenuItem_Click);
             // 
             // parRegionToolStripMenuItem
             // 
             this.parRegionToolStripMenuItem.Name = "parRegionToolStripMenuItem";
-            this.parRegionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.parRegionToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.parRegionToolStripMenuItem.Text = "par region";
+            // 
+            // bsGestionvisiteur
+            // 
+            this.bsGestionvisiteur.CurrentChanged += new System.EventHandler(this.bsGestionvisiteur_CurrentChanged);
             // 
             // label1
             // 
@@ -125,6 +125,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FMission1";
             this.Text = "FMission1";
+            this.Load += new System.EventHandler(this.FMission1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsGestionvisiteur)).EndInit();

@@ -31,7 +31,7 @@ namespace GSB_FINAL
         private void consulterMesInfosToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             FConsultermesinfos fenetreconsulterMesInfos = new FConsultermesinfos();
-            fenetreconsulterMesInfos.Show();
+            fenetreconsulterMesInfos.ShowDialog();
         }
 
         private void bsGestionvisiteur_CurrentChanged(object sender, EventArgs e)
@@ -46,6 +46,11 @@ namespace GSB_FINAL
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FMission1_Load(object sender, EventArgs e)
         {
 
         }
