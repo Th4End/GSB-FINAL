@@ -35,7 +35,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.datarapport = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -43,11 +43,11 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
+            this.bsrapport = new System.Windows.Forms.BindingSource(this.components);
+            this.bsmedecin = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.datarapport)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsrapport)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsmedecin)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -104,13 +104,13 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Date d\'embauche visiteur :";
             // 
-            // dataGridView1
+            // datarapport
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(85, 244);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(790, 325);
-            this.dataGridView1.TabIndex = 6;
+            this.datarapport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datarapport.Location = new System.Drawing.Point(85, 244);
+            this.datarapport.Name = "datarapport";
+            this.datarapport.Size = new System.Drawing.Size(790, 325);
+            this.datarapport.TabIndex = 6;
             // 
             // textBox1
             // 
@@ -163,6 +163,11 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 13;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // bsrapport
+            // 
+            this.bsrapport.CurrentChanged += new System.EventHandler(this.bsrapport_CurrentChanged);
             // 
             // FMission2
             // 
@@ -176,7 +181,7 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.datarapport);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -186,9 +191,9 @@
             this.Name = "FMission2";
             this.Text = "FMission2";
             this.Load += new System.EventHandler(this.FMission2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datarapport)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsrapport)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsmedecin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,7 +207,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView datarapport;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
@@ -210,7 +215,7 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.BindingSource bindingSource1;
-        private System.Windows.Forms.BindingSource bindingSource2;
+        private System.Windows.Forms.BindingSource bsrapport;
+        private System.Windows.Forms.BindingSource bsmedecin;
     }
 }

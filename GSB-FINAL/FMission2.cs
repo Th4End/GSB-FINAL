@@ -16,19 +16,30 @@ namespace GSB_FINAL
         {
             InitializeComponent();
         }
-
+         
         private void FMission2_Load(object sender, EventArgs e)
         {
-            bindingSource1.DataSource = ModeleM2.listrapport();
-            dataGridView1.DataSource = bindingSource1;
-            bindingSource2.DataSource = ModeleM2.listMedecin();
-            comboBox1.DataSource = bindingSource2;
+            bsrapport.DataSource = ModeleM2.listrapport();
+            datarapport.DataSource = bsrapport;
+            bsmedecin.DataSource = ModeleM2.listMedecinVisiteurConnect();
+            comboBox1.DataSource = bsmedecin;
             comboBox1.DisplayMember = "nom";
-            dataGridView1.Columns[6].Visible = false;
-            //dataGridView1.Columns[7].Visible = false;
-            dataGridView1.Columns[8].Visible = false;
-            
+            datarapport.Columns[6].Visible = false;
+            //datarapport.Columns[7].Visible = false;
+            datarapport.Columns[8].Visible = false;
         }
-        
+
+        private void bsrapport_CurrentChanged(object sender, EventArgs e)
+        {
+            foreach(MEDECIN m in ModeleM2.listMedecinVisiteurConnect())
+            {
+
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            datarapport.DataSource = ModeleM2.rapportvisiteurco();
+        }
     }
 }
