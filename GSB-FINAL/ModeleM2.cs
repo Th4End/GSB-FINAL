@@ -55,7 +55,6 @@ namespace GSB_FINAL
                 {
                     vretour.Add(r.MEDECIN);
                 }
-
             }
             return vretour;
         }

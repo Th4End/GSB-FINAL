@@ -31,10 +31,7 @@ namespace GSB_FINAL
 
         private void bsrapport_CurrentChanged(object sender, EventArgs e)
         {
-            foreach(MEDECIN m in ModeleM2.listMedecinVisiteurConnect())
-            {
-
-            }
+            bsmedecin.DataSource = ModeleM2.listMedecinVisiteurConnect();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
