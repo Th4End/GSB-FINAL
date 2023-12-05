@@ -54,5 +54,17 @@ namespace GSB_FINAL
         {
 
         }
+
+        private void mofierLeModDePasseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            modifmotdepasse fenetremodifmotdepasse = new modifmotdepasse();
+            fenetremodifmotdepasse.ShowDialog();
+        }
+
+        private void cONSULTERMESRESPONSABILIT2SToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+             Fconsultermesresponsabilités fenetreconsultermesresponsabilités = new Fconsultermesresponsabilités();
+            fenetreconsultermesresponsabilités.ShowDialog();
+        }
     }
 }

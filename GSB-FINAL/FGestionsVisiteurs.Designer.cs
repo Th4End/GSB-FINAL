@@ -37,8 +37,8 @@
             this.visualiserLesVisiteursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.perSecteurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parRegionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bsGestionvisiteur = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.bsGestionvisiteur = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsGestionvisiteur)).BeginInit();
             this.SuspendLayout();
@@ -68,12 +68,14 @@
             this.cONSULTERMESRESPONSABILIT2SToolStripMenuItem.Name = "cONSULTERMESRESPONSABILIT2SToolStripMenuItem";
             this.cONSULTERMESRESPONSABILIT2SToolStripMenuItem.Size = new System.Drawing.Size(174, 20);
             this.cONSULTERMESRESPONSABILIT2SToolStripMenuItem.Text = "consulter mes responsabilités";
+            this.cONSULTERMESRESPONSABILIT2SToolStripMenuItem.Click += new System.EventHandler(this.cONSULTERMESRESPONSABILIT2SToolStripMenuItem_Click);
             // 
             // mofierLeModDePasseToolStripMenuItem
             // 
             this.mofierLeModDePasseToolStripMenuItem.Name = "mofierLeModDePasseToolStripMenuItem";
             this.mofierLeModDePasseToolStripMenuItem.Size = new System.Drawing.Size(149, 20);
             this.mofierLeModDePasseToolStripMenuItem.Text = "modifier le mot de passe";
+            this.mofierLeModDePasseToolStripMenuItem.Click += new System.EventHandler(this.mofierLeModDePasseToolStripMenuItem_Click);
             // 
             // visualiserLesVisiteursToolStripMenuItem
             // 
@@ -87,19 +89,15 @@
             // perSecteurToolStripMenuItem
             // 
             this.perSecteurToolStripMenuItem.Name = "perSecteurToolStripMenuItem";
-            this.perSecteurToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.perSecteurToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.perSecteurToolStripMenuItem.Text = "par secteur";
             this.perSecteurToolStripMenuItem.Click += new System.EventHandler(this.perSecteurToolStripMenuItem_Click);
             // 
             // parRegionToolStripMenuItem
             // 
             this.parRegionToolStripMenuItem.Name = "parRegionToolStripMenuItem";
-            this.parRegionToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.parRegionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.parRegionToolStripMenuItem.Text = "par region";
-            // 
-            // bsGestionvisiteur
-            // 
-            this.bsGestionvisiteur.CurrentChanged += new System.EventHandler(this.bsGestionvisiteur_CurrentChanged);
             // 
             // label1
             // 
@@ -113,6 +111,10 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "BIENVENUE";
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // bsGestionvisiteur
+            // 
+            this.bsGestionvisiteur.CurrentChanged += new System.EventHandler(this.bsGestionvisiteur_CurrentChanged);
             // 
             // FMission1
             // 
