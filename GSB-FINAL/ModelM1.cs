@@ -31,6 +31,10 @@ namespace GSB_FINAL
         {
             return maConnexion.Visiteur.ToList();
         }
+        public static List<Region>listregion()
+        {
+            return maConnexion.Region.ToList();
+        }
         private static string GetMd5Hash(string PasswdSaisi)
         {
             byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(PasswdSaisi);
@@ -89,6 +93,7 @@ namespace GSB_FINAL
             }
             return message;
         }
+       
 
     }
 }

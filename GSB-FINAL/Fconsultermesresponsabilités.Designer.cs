@@ -107,6 +107,7 @@
             this.Controls.Add(this.dgvregionsresp);
             this.Name = "Fconsultermesresponsabilités";
             this.Text = "Fconsultermesresponsabilités";
+            this.Load += new System.EventHandler(this.Fconsultermesresponsabilités_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvregionsresp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsResponsabilites)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvregionstrav)).EndInit();
