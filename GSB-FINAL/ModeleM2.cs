@@ -9,11 +9,6 @@ namespace GSB_FINAL
     internal class ModeleM2
     {
         private static ALaSmeneProEntities maConnexion;
-        private static Visiteur leVisiteurConnecte;
-        private static void chargeTestVisiteurConnecte()
-        {
-            leVisiteurConnecte = maConnexion.Visiteur.Where(x => x.idVisiteur == "??????").ToList()[0];
-        }
         public static void init()
         {
             maConnexion = new ALaSmeneProEntities();
@@ -44,7 +39,7 @@ namespace GSB_FINAL
         }
         public static List<RAPPORT> rapportvisiteurco()
         {
-            return maConnexion.RAPPORT.Where(x => x.idVisiteur == leVisiteurConnecte.idVisiteur).ToList();
+            return maConnexion.RAPPORT.Where(x => x.idVisiteur == ModeleConnexion.LeVisiteurConnecte.idVisiteur).ToList();
         }
         public static List<MEDECIN> listMedecinVisiteurConnect()
         {
