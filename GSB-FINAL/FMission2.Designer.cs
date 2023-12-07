@@ -36,6 +36,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.datarapport = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -44,7 +45,6 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.bsrapport = new System.Windows.Forms.BindingSource(this.components);
             this.bsmedecin = new System.Windows.Forms.BindingSource(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.datarapport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsrapport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsmedecin)).BeginInit();
@@ -112,6 +112,13 @@
             this.datarapport.Size = new System.Drawing.Size(790, 325);
             this.datarapport.TabIndex = 6;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(718, 146);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(76, 20);
+            this.textBox1.TabIndex = 7;
+            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(140, 59);
@@ -162,28 +169,18 @@
             // 
             this.bsrapport.CurrentChanged += new System.EventHandler(this.bsrapport_CurrentChanged);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(719, 149);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(10, 13);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "calendrier";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.calendrierOn_Click);
-            // 
             // FMission2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(983, 581);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.datarapport);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -211,6 +208,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView datarapport;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
@@ -219,6 +217,5 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.BindingSource bsrapport;
         private System.Windows.Forms.BindingSource bsmedecin;
-        private System.Windows.Forms.Button button1;
     }
 }

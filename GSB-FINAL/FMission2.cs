@@ -38,11 +38,5 @@ namespace GSB_FINAL
         {
             datarapport.DataSource = ModeleM2.rapportvisiteurco();
         }
-
-        private void calendrierOn_Click(object sender, EventArgs e)
-        {
-            MonthCalendar calendar = new MonthCalendar();
-            calendar.Show();
-        }
     }
 }
