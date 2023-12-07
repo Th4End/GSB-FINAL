@@ -109,6 +109,12 @@
     <Compile Include="FraisForfait.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Fvisiteurssecteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fvisiteurssecteur.Designer.cs">
+      <DependentUpon>Fvisiteurssecteur.cs</DependentUpon>
+    </Compile>
     <Compile Include="Laboratoire.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
     </Compile>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FMenu.resx">
       <DependentUpon>FMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fvisiteurssecteur.resx">
+      <DependentUpon>Fvisiteurssecteur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modifmotdepasse.resx">
       <DependentUpon>modifmotdepasse.cs</DependentUpon>

@@ -55,5 +55,10 @@ namespace GSB_FINAL
             }
             dgvregionstrav.Columns[1].Visible = true;
         }
+
+        private void Fermer_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
