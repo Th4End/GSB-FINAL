@@ -16,7 +16,7 @@ namespace GSB_FINAL
         {
             InitializeComponent();
         }
-         
+
         private void FMission2_Load(object sender, EventArgs e)
         {
             bsrapport.DataSource = ModeleM2.listrapport();
@@ -27,6 +27,10 @@ namespace GSB_FINAL
             datarapport.Columns[6].Visible = false;
             //datarapport.Columns[7].Visible = false;
             datarapport.Columns[8].Visible = false;
+            label8.Text = ModeleConnexion.LeVisiteurConnecte.nom+" "+ ModeleConnexion.LeVisiteurConnecte.prenom;
+            label9.Text = ModeleConnexion.LeVisiteurConnecte.rue+" " + ModeleConnexion.LeVisiteurConnecte.ville + " " + ModeleConnexion.LeVisiteurConnecte.cp; 
+            label11.Text = ModeleConnexion.LeVisiteurConnecte.dateEmbauche;
+
         }
 
         private void bsrapport_CurrentChanged(object sender, EventArgs e)
@@ -38,5 +42,25 @@ namespace GSB_FINAL
         {
             datarapport.DataSource = ModeleM2.rapportvisiteurco();
         }
+
+        private void calendrier_Click(object sender, EventArgs e)
+        {
+            // this.monthCalendar1.Visible = true;
+            this.monthCalendar1.Show();
+            calendrier.Click += Calendrier_Click;
+
+        }
+
+        private void Calendrier_Click(object sender, EventArgs e)
+        {
+            this.monthCalendar1.Visible = false;
+        }
+
+        private void datarapport_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            FformulaireModif modif = new FformulaireModif();
+            modif.ShowDialog();
+        }
     }
 }
+
