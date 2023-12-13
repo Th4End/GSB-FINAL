@@ -37,21 +37,22 @@
             this.bsFiches = new System.Windows.Forms.BindingSource(this.components);
             this.aLaSmeneProDataSet = new GSB_FINAL.ALaSmeneProDataSet();
             this.PanelFiltre = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBoxAnnee = new System.Windows.Forms.ComboBox();
+            this.comboBoxMois = new System.Windows.Forms.ComboBox();
             this.checkBoxEtat = new System.Windows.Forms.CheckBox();
             this.checkBoxPeriode = new System.Windows.Forms.CheckBox();
             this.checkBoxMois = new System.Windows.Forms.CheckBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerFin = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerDebut = new System.Windows.Forms.DateTimePicker();
+            this.comboBoxEtat = new System.Windows.Forms.ComboBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.CheckFiltre = new System.Windows.Forms.CheckBox();
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.FiltreButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvfiches)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsFiches)).BeginInit();
@@ -76,7 +77,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(448, 497);
+            this.button2.Location = new System.Drawing.Point(490, 497);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 5;
@@ -113,14 +114,14 @@
             // PanelFiltre
             // 
             this.PanelFiltre.Controls.Add(this.textBox1);
-            this.PanelFiltre.Controls.Add(this.comboBox3);
-            this.PanelFiltre.Controls.Add(this.comboBox2);
+            this.PanelFiltre.Controls.Add(this.comboBoxAnnee);
+            this.PanelFiltre.Controls.Add(this.comboBoxMois);
             this.PanelFiltre.Controls.Add(this.checkBoxEtat);
             this.PanelFiltre.Controls.Add(this.checkBoxPeriode);
             this.PanelFiltre.Controls.Add(this.checkBoxMois);
-            this.PanelFiltre.Controls.Add(this.dateTimePicker2);
-            this.PanelFiltre.Controls.Add(this.dateTimePicker1);
-            this.PanelFiltre.Controls.Add(this.comboBox1);
+            this.PanelFiltre.Controls.Add(this.dateTimePickerFin);
+            this.PanelFiltre.Controls.Add(this.dateTimePickerDebut);
+            this.PanelFiltre.Controls.Add(this.comboBoxEtat);
             this.PanelFiltre.Controls.Add(this.textBox8);
             this.PanelFiltre.Controls.Add(this.textBox7);
             this.PanelFiltre.Controls.Add(this.textBox6);
@@ -131,144 +132,20 @@
             this.PanelFiltre.TabIndex = 7;
             this.PanelFiltre.Visible = false;
             // 
-            // checkBoxEtat
+            // textBox1
             // 
-            this.checkBoxEtat.AutoSize = true;
-            this.checkBoxEtat.Location = new System.Drawing.Point(8, 103);
-            this.checkBoxEtat.Name = "checkBoxEtat";
-            this.checkBoxEtat.Size = new System.Drawing.Size(15, 14);
-            this.checkBoxEtat.TabIndex = 13;
-            this.checkBoxEtat.UseVisualStyleBackColor = true;
-            this.checkBoxEtat.CheckedChanged += new System.EventHandler(this.checkBoxEtat_CheckedChanged);
+            this.textBox1.Location = new System.Drawing.Point(214, 24);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(19, 20);
+            this.textBox1.TabIndex = 16;
+            this.textBox1.Text = " /";
             // 
-            // checkBoxPeriode
+            // comboBoxAnnee
             // 
-            this.checkBoxPeriode.AutoSize = true;
-            this.checkBoxPeriode.Location = new System.Drawing.Point(8, 68);
-            this.checkBoxPeriode.Name = "checkBoxPeriode";
-            this.checkBoxPeriode.Size = new System.Drawing.Size(15, 14);
-            this.checkBoxPeriode.TabIndex = 12;
-            this.checkBoxPeriode.UseVisualStyleBackColor = true;
-            this.checkBoxPeriode.CheckedChanged += new System.EventHandler(this.checkBoxPeriode_CheckedChanged);
-            // 
-            // checkBoxMois
-            // 
-            this.checkBoxMois.AutoSize = true;
-            this.checkBoxMois.Location = new System.Drawing.Point(8, 27);
-            this.checkBoxMois.Name = "checkBoxMois";
-            this.checkBoxMois.Size = new System.Drawing.Size(15, 14);
-            this.checkBoxMois.TabIndex = 9;
-            this.checkBoxMois.UseVisualStyleBackColor = true;
-            this.checkBoxMois.CheckedChanged += new System.EventHandler(this.checkBoxMois_CheckedChanged);
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(214, 65);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(78, 20);
-            this.dateTimePicker2.TabIndex = 11;
-            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(99, 65);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(84, 20);
-            this.dateTimePicker1.TabIndex = 10;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Remboursée",
-            "Saisie clôturée",
-            "Fiche créée, saisie en cours",
-            "Validée et mise en paiement"});
-            this.comboBox1.Location = new System.Drawing.Point(135, 100);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(157, 21);
-            this.comboBox1.TabIndex = 7;
-            this.comboBox1.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(29, 101);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 6;
-            this.textBox8.Text = "État :";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(29, 65);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(63, 20);
-            this.textBox7.TabIndex = 5;
-            this.textBox7.Text = "Période :";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(29, 24);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 4;
-            this.textBox6.Text = "Mois/Année :";
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(189, 65);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(19, 20);
-            this.textBox4.TabIndex = 2;
-            this.textBox4.Text = " /";
-            // 
-            // CheckFiltre
-            // 
-            this.CheckFiltre.AutoSize = true;
-            this.CheckFiltre.Location = new System.Drawing.Point(654, 72);
-            this.CheckFiltre.Name = "CheckFiltre";
-            this.CheckFiltre.Size = new System.Drawing.Size(66, 17);
-            this.CheckFiltre.TabIndex = 8;
-            this.CheckFiltre.Text = "FILTRE ";
-            this.CheckFiltre.UseVisualStyleBackColor = true;
-            this.CheckFiltre.CheckedChanged += new System.EventHandler(this.CheckFiltre_CheckedChanged);
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "JANVIER",
-            "FÉVRIER",
-            "MARS",
-            "AVRIL",
-            "MAI",
-            "JUIN",
-            "JUILLET",
-            "AOUT",
-            "SEPTEMBRE",
-            "OCTOBRE",
-            "NOVEMBRE",
-            "DÉCEMBRE"});
-            this.comboBox2.Location = new System.Drawing.Point(135, 23);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(68, 21);
-            this.comboBox2.TabIndex = 14;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.comboBoxAnnee.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxAnnee.FormattingEnabled = true;
+            this.comboBoxAnnee.Items.AddRange(new object[] {
             "1523",
             "1524",
             "1525",
@@ -771,25 +648,160 @@
             "2022",
             "2023",
             "2024"});
-            this.comboBox3.Location = new System.Drawing.Point(236, 24);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(56, 21);
-            this.comboBox3.TabIndex = 15;
+            this.comboBoxAnnee.Location = new System.Drawing.Point(236, 24);
+            this.comboBoxAnnee.Name = "comboBoxAnnee";
+            this.comboBoxAnnee.Size = new System.Drawing.Size(56, 21);
+            this.comboBoxAnnee.TabIndex = 15;
             // 
-            // textBox1
+            // comboBoxMois
             // 
-            this.textBox1.Location = new System.Drawing.Point(214, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(19, 20);
-            this.textBox1.TabIndex = 16;
-            this.textBox1.Text = " /";
+            this.comboBoxMois.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxMois.FormattingEnabled = true;
+            this.comboBoxMois.Items.AddRange(new object[] {
+            "JANVIER",
+            "FÉVRIER",
+            "MARS",
+            "AVRIL",
+            "MAI",
+            "JUIN",
+            "JUILLET",
+            "AOUT",
+            "SEPTEMBRE",
+            "OCTOBRE",
+            "NOVEMBRE",
+            "DÉCEMBRE"});
+            this.comboBoxMois.Location = new System.Drawing.Point(135, 23);
+            this.comboBoxMois.Name = "comboBoxMois";
+            this.comboBoxMois.Size = new System.Drawing.Size(68, 21);
+            this.comboBoxMois.TabIndex = 14;
+            // 
+            // checkBoxEtat
+            // 
+            this.checkBoxEtat.AutoSize = true;
+            this.checkBoxEtat.Location = new System.Drawing.Point(8, 103);
+            this.checkBoxEtat.Name = "checkBoxEtat";
+            this.checkBoxEtat.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxEtat.TabIndex = 13;
+            this.checkBoxEtat.UseVisualStyleBackColor = true;
+            this.checkBoxEtat.CheckedChanged += new System.EventHandler(this.checkBoxEtat_CheckedChanged);
+            // 
+            // checkBoxPeriode
+            // 
+            this.checkBoxPeriode.AutoSize = true;
+            this.checkBoxPeriode.Location = new System.Drawing.Point(8, 68);
+            this.checkBoxPeriode.Name = "checkBoxPeriode";
+            this.checkBoxPeriode.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxPeriode.TabIndex = 12;
+            this.checkBoxPeriode.UseVisualStyleBackColor = true;
+            this.checkBoxPeriode.CheckedChanged += new System.EventHandler(this.checkBoxPeriode_CheckedChanged);
+            // 
+            // checkBoxMois
+            // 
+            this.checkBoxMois.AutoSize = true;
+            this.checkBoxMois.Location = new System.Drawing.Point(8, 27);
+            this.checkBoxMois.Name = "checkBoxMois";
+            this.checkBoxMois.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxMois.TabIndex = 9;
+            this.checkBoxMois.UseVisualStyleBackColor = true;
+            this.checkBoxMois.CheckedChanged += new System.EventHandler(this.checkBoxMois_CheckedChanged);
+            // 
+            // dateTimePickerFin
+            // 
+            this.dateTimePickerFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerFin.Location = new System.Drawing.Point(214, 65);
+            this.dateTimePickerFin.Name = "dateTimePickerFin";
+            this.dateTimePickerFin.Size = new System.Drawing.Size(78, 20);
+            this.dateTimePickerFin.TabIndex = 11;
+            this.dateTimePickerFin.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
+            // 
+            // dateTimePickerDebut
+            // 
+            this.dateTimePickerDebut.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerDebut.Location = new System.Drawing.Point(99, 65);
+            this.dateTimePickerDebut.Name = "dateTimePickerDebut";
+            this.dateTimePickerDebut.Size = new System.Drawing.Size(84, 20);
+            this.dateTimePickerDebut.TabIndex = 10;
+            this.dateTimePickerDebut.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // comboBoxEtat
+            // 
+            this.comboBoxEtat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxEtat.FormattingEnabled = true;
+            this.comboBoxEtat.Items.AddRange(new object[] {
+            "Remboursée",
+            "Saisie clôturée",
+            "Fiche créée, saisie en cours",
+            "Validée et mise en paiement"});
+            this.comboBoxEtat.Location = new System.Drawing.Point(135, 100);
+            this.comboBoxEtat.Name = "comboBoxEtat";
+            this.comboBoxEtat.Size = new System.Drawing.Size(157, 21);
+            this.comboBoxEtat.TabIndex = 7;
+            this.comboBoxEtat.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(29, 101);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
+            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.TabIndex = 6;
+            this.textBox8.Text = "État :";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(29, 65);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
+            this.textBox7.Size = new System.Drawing.Size(63, 20);
+            this.textBox7.TabIndex = 5;
+            this.textBox7.Text = "Période :";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(29, 24);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 4;
+            this.textBox6.Text = "Mois/Année :";
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(189, 65);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(19, 20);
+            this.textBox4.TabIndex = 2;
+            this.textBox4.Text = " /";
+            // 
+            // CheckFiltre
+            // 
+            this.CheckFiltre.AutoSize = true;
+            this.CheckFiltre.Location = new System.Drawing.Point(654, 72);
+            this.CheckFiltre.Name = "CheckFiltre";
+            this.CheckFiltre.Size = new System.Drawing.Size(66, 17);
+            this.CheckFiltre.TabIndex = 8;
+            this.CheckFiltre.Text = "FILTRE ";
+            this.CheckFiltre.UseVisualStyleBackColor = true;
+            this.CheckFiltre.CheckedChanged += new System.EventHandler(this.CheckFiltre_CheckedChanged);
+            // 
+            // FiltreButton
+            // 
+            this.FiltreButton.Location = new System.Drawing.Point(358, 497);
+            this.FiltreButton.Name = "FiltreButton";
+            this.FiltreButton.Size = new System.Drawing.Size(75, 23);
+            this.FiltreButton.TabIndex = 9;
+            this.FiltreButton.Text = "Filtres";
+            this.FiltreButton.UseVisualStyleBackColor = true;
+            this.FiltreButton.Click += new System.EventHandler(this.FiltreButton_Click);
             // 
             // FMission3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(954, 532);
+            this.Controls.Add(this.FiltreButton);
             this.Controls.Add(this.CheckFiltre);
             this.Controls.Add(this.PanelFiltre);
             this.Controls.Add(this.menuStrip1);
@@ -825,16 +837,17 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxEtat;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDebut;
+        private System.Windows.Forms.DateTimePicker dateTimePickerFin;
         private System.DirectoryServices.DirectoryEntry directoryEntry1;
         private System.Windows.Forms.CheckBox checkBoxEtat;
         private System.Windows.Forms.CheckBox checkBoxPeriode;
         private System.Windows.Forms.CheckBox checkBoxMois;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxAnnee;
+        private System.Windows.Forms.ComboBox comboBoxMois;
+        private System.Windows.Forms.Button FiltreButton;
     }
 }
