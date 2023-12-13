@@ -80,7 +80,7 @@ namespace GSB_FINAL
             {
                 try
                 {
-                    string newmdph = GetMd5Hash(nouveaupassword);
+                    string newmdph = string.Concat("0x", GetMd5Hash(nouveaupassword));
                     ModeleConnexion.LeVisiteurConnecte.password = newmdph;
                     ModeleConnexion.maConnexion.SaveChanges();
                     message = "mot de passe modifié";
