@@ -55,7 +55,7 @@ namespace GSB_FINAL
         }
         /*public static List<MOTIF> motifvisiteurco()
         {
-            return maConnexion.MOTIF.Where(x => x.idVisiteur == ModeleConnexion.LeVisiteurConnecte.idVisiteur).ToList();
+           // return maConnexion.MOTIF.Where(x => x.RAPPORT. == ModeleConnexion.LeVisiteurConnecte.idVisiteur).ToList();
         }*/ 
 
     }
