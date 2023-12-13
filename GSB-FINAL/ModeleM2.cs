@@ -53,10 +53,10 @@ namespace GSB_FINAL
             }
             return vretour;
         }
-        public static List<MOTIF> motifvisiteurco()
+        /*public static List<MOTIF> motifvisiteurco()
         {
             return maConnexion.MOTIF.Where(x => x.idVisiteur == ModeleConnexion.LeVisiteurConnecte.idVisiteur).ToList();
-        }
+        }*/ 
 
     }
 }
