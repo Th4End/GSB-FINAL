@@ -51,21 +51,33 @@ namespace GSB_FINAL
             this.monthCalendar1.Show();
             calendrier.Click += Calendrier_Click;
 
-        }
 
+        }
         private void Calendrier_Click(object sender, EventArgs e)
         {
             this.monthCalendar1.Visible = false;
+
         }
 
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-
+            System.Type type = bsrapport.Current.GetType();
+            int id = (int)type.GetProperty("idRapport").GetValue(bsrapport.Current, null);
+            ModeleM2.Rapportchoisi = ModeleM2.rapportid(id);
+            this.Close();
 
             FformulaireModif modif = new FformulaireModif();
             modif.ShowDialog();
+            
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FcreationRapport fcreationRapport = new FcreationRapport();
+            fcreationRapport.ShowDialog();
         }
     }
 }

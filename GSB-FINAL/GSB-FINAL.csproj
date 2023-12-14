@@ -72,6 +72,12 @@
     <Compile Include="FConnexion.Designer.cs">
       <DependentUpon>FConnexion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FcreationRapport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FcreationRapport.Designer.cs">
+      <DependentUpon>FcreationRapport.cs</DependentUpon>
+    </Compile>
     <Compile Include="FformulaireModif.cs">
       <SubType>Form</SubType>
     </Compile>

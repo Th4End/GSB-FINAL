@@ -10,6 +10,12 @@ namespace GSB_FINAL
     {
         private static ALaSmeneProEntities maConnexion;
         private static int unID;
+        public static int ActionMission2 = 0;
+        private static MEDECIN practicienchoisi;
+        private static RAPPORT rapportchoisi;
+
+        public static RAPPORT Rapportchoisi { get => rapportchoisi; set => rapportchoisi = value; }
+        public static MEDECIN Practicienchoisi { get => practicienchoisi; set => practicienchoisi = value; }
 
         public static void init()
         {
@@ -55,10 +61,28 @@ namespace GSB_FINAL
             }
             return vretour;
         }
-        public static RAPPORT rapportmedecin(int ID)
+        public static RAPPORT rapportid(int ID)
         {
             RAPPORT vretour = maConnexion.RAPPORT.Where(x => x.idRapport == ID).ToList()[0];
             return vretour;
+        }
+        public static bool ModifRaport(int id, string bilan, string nom, string motif, DateTime date)
+        {
+            bool retour = false;
+            try
+            {
+                rapportchoisi.bilan = bilan;
+                rapportchoisi.idRapport = id;
+                rapportchoisi.MEDECIN.nom = nom;
+                rapportchoisi.MOTIF.libMotif = motif;
+                rapportchoisi.dateRapport = date;
+                maConnexion.SaveChanges();
+            }catch(Exception ex)
+            {
+                retour = false;
+            }
+            return retour;
+
         }
     }
 }

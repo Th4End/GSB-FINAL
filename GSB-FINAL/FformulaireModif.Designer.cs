@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FformulaireModif));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,9 +39,11 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.confirm = new System.Windows.Forms.Button();
             this.cancel = new System.Windows.Forms.Button();
-            this.Motiflist = new System.Windows.Forms.ComboBox();
+            this.BilanList = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -123,13 +126,13 @@
             this.cancel.UseVisualStyleBackColor = true;
             this.cancel.Click += new System.EventHandler(this.cancel_Click);
             // 
-            // Motiflist
+            // BilanList
             // 
-            this.Motiflist.FormattingEnabled = true;
-            this.Motiflist.Location = new System.Drawing.Point(58, 145);
-            this.Motiflist.Name = "Motiflist";
-            this.Motiflist.Size = new System.Drawing.Size(121, 21);
-            this.Motiflist.TabIndex = 9;
+            this.BilanList.FormattingEnabled = true;
+            this.BilanList.Location = new System.Drawing.Point(58, 145);
+            this.BilanList.Name = "BilanList";
+            this.BilanList.Size = new System.Drawing.Size(121, 21);
+            this.BilanList.TabIndex = 9;
             // 
             // dataGridView1
             // 
@@ -145,7 +148,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.Motiflist);
+            this.Controls.Add(this.BilanList);
             this.Controls.Add(this.cancel);
             this.Controls.Add(this.confirm);
             this.Controls.Add(this.richTextBox1);
@@ -160,6 +163,7 @@
             this.Text = "FformulaireModif";
             this.Load += new System.EventHandler(this.FformulaireModif_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,7 +180,8 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button confirm;
         private System.Windows.Forms.Button cancel;
-        private System.Windows.Forms.ComboBox Motiflist;
+        private System.Windows.Forms.ComboBox BilanList;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }
