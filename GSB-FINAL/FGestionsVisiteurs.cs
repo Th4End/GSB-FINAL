@@ -60,5 +60,11 @@ namespace GSB_FINAL
             Fvisiteurssecteur Fvisiteurssecteur = new Fvisiteurssecteur();
             Fvisiteurssecteur.Show();
         }
+
+        private void créationDuVisiteurToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Fcreationvisiteur Fcreationvisiteur = new Fcreationvisiteur();
+            Fcreationvisiteur.Show();
+        }
     }
 }

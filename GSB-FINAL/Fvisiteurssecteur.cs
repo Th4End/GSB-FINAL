@@ -43,7 +43,7 @@ namespace GSB_FINAL
 
         private void bsregion_CurrentChanged(object sender, EventArgs e)
         {
-            bsvisiteur.DataSource = ((Region)bsregion.Current).Visiteur;
+            bsvisiteur.DataSource = ((Region)bsregion.Current).Visiteur1;
             dgvvisiteursecteur.DataSource = bsvisiteur;
             for (int i = 0; i < dgvvisiteursecteur.Columns.Count; i++)
             {

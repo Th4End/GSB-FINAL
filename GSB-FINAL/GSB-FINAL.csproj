@@ -79,6 +79,12 @@
     <Compile Include="Fconsultermesresponsabilités.Designer.cs">
       <DependentUpon>Fconsultermesresponsabilités.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fcreationvisiteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fcreationvisiteur.Designer.cs">
+      <DependentUpon>Fcreationvisiteur.cs</DependentUpon>
+    </Compile>
     <Compile Include="FGestionsVisiteurs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Fconsultermesresponsabilités.resx">
       <DependentUpon>Fconsultermesresponsabilités.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fcreationvisiteur.resx">
+      <DependentUpon>Fcreationvisiteur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FGestionsVisiteurs.resx">
       <DependentUpon>FGestionsVisiteurs.cs</DependentUpon>

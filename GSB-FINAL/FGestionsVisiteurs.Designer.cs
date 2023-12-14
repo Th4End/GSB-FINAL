@@ -37,6 +37,7 @@
             this.visualiserLesVisiteursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.bsGestionvisiteur = new System.Windows.Forms.BindingSource(this.components);
+            this.créationDuVisiteurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsGestionvisiteur)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +48,8 @@
             this.consulterMesInfosToolStripMenuItem,
             this.cONSULTERMESRESPONSABILIT2SToolStripMenuItem,
             this.mofierLeModDePasseToolStripMenuItem,
-            this.visualiserLesVisiteursToolStripMenuItem});
+            this.visualiserLesVisiteursToolStripMenuItem,
+            this.créationDuVisiteurToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -99,6 +101,13 @@
             // 
             this.bsGestionvisiteur.CurrentChanged += new System.EventHandler(this.bsGestionvisiteur_CurrentChanged);
             // 
+            // créationDuVisiteurToolStripMenuItem
+            // 
+            this.créationDuVisiteurToolStripMenuItem.Name = "créationDuVisiteurToolStripMenuItem";
+            this.créationDuVisiteurToolStripMenuItem.Size = new System.Drawing.Size(120, 20);
+            this.créationDuVisiteurToolStripMenuItem.Text = "création du visiteur";
+            this.créationDuVisiteurToolStripMenuItem.Click += new System.EventHandler(this.créationDuVisiteurToolStripMenuItem_Click);
+            // 
             // FMission1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -128,5 +137,6 @@
         private System.Windows.Forms.ToolStripMenuItem mofierLeModDePasseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem visualiserLesVisiteursToolStripMenuItem;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem créationDuVisiteurToolStripMenuItem;
     }
 }
