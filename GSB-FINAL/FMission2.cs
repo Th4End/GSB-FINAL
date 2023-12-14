@@ -61,6 +61,9 @@ namespace GSB_FINAL
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+
+
             FformulaireModif modif = new FformulaireModif();
             modif.ShowDialog();
         }

@@ -9,6 +9,8 @@ namespace GSB_FINAL
     internal class ModeleM2
     {
         private static ALaSmeneProEntities maConnexion;
+        private static int unID;
+
         public static void init()
         {
             maConnexion = new ALaSmeneProEntities();
@@ -53,10 +55,10 @@ namespace GSB_FINAL
             }
             return vretour;
         }
-        /*public static List<MOTIF> motifvisiteurco()
+        public static RAPPORT rapportmedecin(int ID)
         {
-           // return maConnexion.MOTIF.Where(x => x.RAPPORT. == ModeleConnexion.LeVisiteurConnecte.idVisiteur).ToList();
-        }*/ 
-
+            RAPPORT vretour = maConnexion.RAPPORT.Where(x => x.idRapport == ID).ToList()[0];
+            return vretour;
+        }
     }
 }
