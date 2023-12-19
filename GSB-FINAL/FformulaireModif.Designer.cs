@@ -115,6 +115,7 @@
             this.confirm.TabIndex = 7;
             this.confirm.Text = "Valider";
             this.confirm.UseVisualStyleBackColor = true;
+            this.confirm.Click += new System.EventHandler(this.confirm_Click);
             // 
             // cancel
             // 

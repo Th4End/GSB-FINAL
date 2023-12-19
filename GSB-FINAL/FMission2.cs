@@ -62,6 +62,7 @@ namespace GSB_FINAL
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             System.Type type = bsrapport.Current.GetType();
             int id = (int)type.GetProperty("idRapport").GetValue(bsrapport.Current, null);
             ModeleM2.Rapportchoisi = ModeleM2.rapportid(id);
@@ -77,6 +78,7 @@ namespace GSB_FINAL
         {
             this.Close();
             FcreationRapport fcreationRapport = new FcreationRapport();
+            fcreationRapport.AutoScaleDimensions.ToSize();
             fcreationRapport.ShowDialog();
         }
     }

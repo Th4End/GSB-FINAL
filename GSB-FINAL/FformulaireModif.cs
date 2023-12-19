@@ -15,9 +15,7 @@ namespace GSB_FINAL
         public FformulaireModif()
         {
             InitializeComponent();
-            bindingSource1 = ModeleM2.ModifRaport().ToString();
-            BilanList.DataBindings = bindingSource1;
-        }
+        }   
 
         private void FformulaireModif_Load(object sender, EventArgs e)
         {
@@ -28,6 +26,11 @@ namespace GSB_FINAL
         private void cancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void confirm_Click(object sender, EventArgs e)
+        {
+            ModeleM2.Sauvegarde_modification();
         }
     }
 }

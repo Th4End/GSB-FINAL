@@ -67,6 +67,7 @@ namespace GSB_FINAL
             return vretour;
         }
         public static bool ModifRaport(int id, string bilan, string nom, string motif, DateTime date)
+        
         {
             bool retour = false;
             try
@@ -77,12 +78,17 @@ namespace GSB_FINAL
                 rapportchoisi.MOTIF.libMotif = motif;
                 rapportchoisi.dateRapport = date;
                 maConnexion.SaveChanges();
+                
             }catch(Exception ex)
             {
                 retour = false;
             }
             return retour;
 
+        }
+        public static void Sauvegarde_modification()
+        {
+            maConnexion.SaveChanges();
         }
     }
 }
