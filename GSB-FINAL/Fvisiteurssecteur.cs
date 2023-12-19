@@ -36,21 +36,25 @@ namespace GSB_FINAL
         private void bssecteur_CurrentChanged(object sender, EventArgs e)
         {
             bsregion.DataSource = ((Secteur)bssecteur.Current).Region.ToList();
-            cboregions.DisplayMember = "libregion";
+            cboregions.DisplayMember = "libRegion";
             cboregions.DataSource = bsregion;
             txtSecteur.Text = ((Secteur)bssecteur.Current).Visiteur.nom.Trim().ToString() + " " + ((Secteur)bssecteur.Current).Visiteur.prenom.Trim().ToString();
         }
 
         private void bsregion_CurrentChanged(object sender, EventArgs e)
         {
-            bsvisiteur.DataSource = ((Region)bsregion.Current).Visiteur1;
+            bsvisiteur.DataSource = ((Region)bsregion.Current).Visiteur1.ToList();
             dgvvisiteursecteur.DataSource = bsvisiteur;
-            for (int i = 0; i < dgvvisiteursecteur.Columns.Count; i++)
+
+            if (((Region)bsregion.Current).Visiteur1.ToList().Count> 0)
             {
-                dgvvisiteursecteur.Columns[i].Visible = false;
+                for (int i = 0; i < dgvvisiteursecteur.Columns.Count; i++)
+                {
+                    dgvvisiteursecteur.Columns[i].Visible = false;
+                }
+                dgvvisiteursecteur.Columns[8].Visible = true;
+                dgvvisiteursecteur.Columns[9].Visible = true;
             }
-            dgvvisiteursecteur.Columns[8].Visible = true;
-            dgvvisiteursecteur.Columns[9].Visible = true;
         }
     }
 }
