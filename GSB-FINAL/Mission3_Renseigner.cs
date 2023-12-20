@@ -23,7 +23,8 @@ namespace GSB_FINAL
         private void bsTypeLoco_CurrentChanged(object sender, EventArgs e)
         {
             FraisForfait lefraischoisis = (FraisForfait)bsTypeLoco.Current;
-            ChoixLoco = lefraischoisis.id.ToString();
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
