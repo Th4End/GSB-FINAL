@@ -55,6 +55,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ALaSmeneProDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ALaSmeneProDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Etat.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
     </Compile>
@@ -112,6 +117,12 @@
     <Compile Include="MEDICAMENT.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Mission3_Renseigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mission3_Renseigner.Designer.cs">
+      <DependentUpon>Mission3_Renseigner.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModeleConnexion.cs" />
     <Compile Include="ModeleM2.cs" />
     <Compile Include="ModeleM3.cs" />
@@ -157,11 +168,23 @@
     <Compile Include="Visiteur.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FConnexion.resx">
+      <DependentUpon>FConnexion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FGestionsVisiteurs.resx">
       <DependentUpon>FGestionsVisiteurs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FMenu.resx">
       <DependentUpon>FMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMission2.resx">
+      <DependentUpon>FMission2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMission3.resx">
+      <DependentUpon>FMission3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mission3_Renseigner.resx">
+      <DependentUpon>Mission3_Renseigner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -176,6 +199,17 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model_GSB.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="ALaSmeneProDataSet1.xsc">
+      <DependentUpon>ALaSmeneProDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ALaSmeneProDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ALaSmeneProDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ALaSmeneProDataSet1.xss">
+      <DependentUpon>ALaSmeneProDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Model_GSB.edmx.diagram">
       <DependentUpon>Model_GSB.edmx</DependentUpon>
     </None>

@@ -12,18 +12,17 @@ namespace GSB_FINAL
         private static ALaSmeneProEntities maConnexion;
         private static Visiteur leVisiteurConnecte;
         private static int Action;//1 ajout et 2 modif
-        private static void chargeTestVisiteurConnecte()
-        {
-            leVisiteurConnecte = maConnexion.Visiteur.Where(x => x.idVisiteur == "??????").ToList()[0];
-        }
         public static void init()
         { 
             maConnexion = new ALaSmeneProEntities();
-            chargeTestVisiteurConnecte();
         }
-        public static List<Region> listregion()
+        public static List<FAMILLE> listfamille()
         {
-            return maConnexion.Region.ToList();
+            return maConnexion.FAMILLE.ToList();
+        }
+        public static List<MOTIF> listmotif()
+        {
+            return maConnexion.MOTIF.ToList();
         }
         public static List<Visiteur> listvisiteur()
         {
