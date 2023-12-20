@@ -20,7 +20,6 @@ namespace GSB_FINAL
         public static void init()
         {
             maConnexion = new ALaSmeneProEntities();
-            chargeTestVisiteurConnecte();
         }
         private static string GetMd5Hash(string PasswdSaisi)
         {
