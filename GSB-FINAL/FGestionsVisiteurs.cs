@@ -16,5 +16,38 @@ namespace GSB_FINAL
         {
             InitializeComponent();
         }
+
+      
+
+        
+
+       
+
+        private void perSecteurToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void consulterMesInfosToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            FConsultermesinfos fenetreconsulterMesInfos = new FConsultermesinfos();
+            fenetreconsulterMesInfos.Show();
+        }
+
+        private void bsGestionvisiteur_CurrentChanged(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

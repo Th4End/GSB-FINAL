@@ -73,6 +73,12 @@
     <Compile Include="FConnexion.Designer.cs">
       <DependentUpon>FConnexion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FConsultermesinfos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultermesinfos.Designer.cs">
+      <DependentUpon>FConsultermesinfos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FGestionsVisiteurs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,9 @@
     </Compile>
     <EmbeddedResource Include="FConnexion.resx">
       <DependentUpon>FConnexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultermesinfos.resx">
+      <DependentUpon>FConsultermesinfos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FGestionsVisiteurs.resx">
       <DependentUpon>FGestionsVisiteurs.cs</DependentUpon>

@@ -34,6 +34,7 @@
             this.mission1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mission2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mission3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionDesVisiteursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,6 +87,13 @@
             this.mission3ToolStripMenuItem.Text = "Mission 3";
             this.mission3ToolStripMenuItem.Click += new System.EventHandler(this.mission3ToolStripMenuItem_Click_1);
             // 
+            // gestionDesVisiteursToolStripMenuItem
+            // 
+            this.gestionDesVisiteursToolStripMenuItem.Name = "gestionDesVisiteursToolStripMenuItem";
+            this.gestionDesVisiteursToolStripMenuItem.ShowShortcutKeys = false;
+            this.gestionDesVisiteursToolStripMenuItem.Size = new System.Drawing.Size(126, 20);
+            this.gestionDesVisiteursToolStripMenuItem.Text = "Gestion des visiteurs";
+            // 
             // FMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -111,6 +119,7 @@
         private System.Windows.Forms.ToolStripMenuItem mission1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mission2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mission3ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gestionDesVisiteursToolStripMenuItem;
     }
 }
 
