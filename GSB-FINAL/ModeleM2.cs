@@ -44,6 +44,7 @@ namespace GSB_FINAL
         public static List<Secteur> listsecteur()
         {
             return maConnexion.Secteur.ToList();
+
         }
         public static List<RAPPORT> rapportvisiteurco()
         {
