@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMission1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.bsGestionvisiteur = new System.Windows.Forms.BindingSource(this.components);
             this.consulterMesInfosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cONSULTERMESRESPONSABILIT2SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mofierLeModDePasseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,7 +39,6 @@
             this.perSecteurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.parRegionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
-            this.bsGestionvisiteur = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsGestionvisiteur)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +56,10 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // bsGestionvisiteur
+            // 
+            this.bsGestionvisiteur.CurrentChanged += new System.EventHandler(this.bsGestionvisiteur_CurrentChanged);
+            // 
             // consulterMesInfosToolStripMenuItem
             // 
             this.consulterMesInfosToolStripMenuItem.Name = "consulterMesInfosToolStripMenuItem";
@@ -68,14 +72,12 @@
             this.cONSULTERMESRESPONSABILIT2SToolStripMenuItem.Name = "cONSULTERMESRESPONSABILIT2SToolStripMenuItem";
             this.cONSULTERMESRESPONSABILIT2SToolStripMenuItem.Size = new System.Drawing.Size(174, 20);
             this.cONSULTERMESRESPONSABILIT2SToolStripMenuItem.Text = "consulter mes responsabilités";
-            this.cONSULTERMESRESPONSABILIT2SToolStripMenuItem.Click += new System.EventHandler(this.cONSULTERMESRESPONSABILIT2SToolStripMenuItem_Click);
             // 
             // mofierLeModDePasseToolStripMenuItem
             // 
             this.mofierLeModDePasseToolStripMenuItem.Name = "mofierLeModDePasseToolStripMenuItem";
             this.mofierLeModDePasseToolStripMenuItem.Size = new System.Drawing.Size(149, 20);
             this.mofierLeModDePasseToolStripMenuItem.Text = "modifier le mot de passe";
-            this.mofierLeModDePasseToolStripMenuItem.Click += new System.EventHandler(this.mofierLeModDePasseToolStripMenuItem_Click);
             // 
             // visualiserLesVisiteursToolStripMenuItem
             // 
@@ -112,10 +114,6 @@
             this.label1.Text = "BIENVENUE";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // bsGestionvisiteur
-            // 
-            this.bsGestionvisiteur.CurrentChanged += new System.EventHandler(this.bsGestionvisiteur_CurrentChanged);
-            // 
             // FMission1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -127,7 +125,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FMission1";
             this.Text = "FMission1";
-            this.Load += new System.EventHandler(this.FMission1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsGestionvisiteur)).EndInit();
