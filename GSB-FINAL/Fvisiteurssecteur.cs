@@ -52,8 +52,8 @@ namespace GSB_FINAL
                 {
                     dgvvisiteursecteur.Columns[i].Visible = false;
                 }
-                dgvvisiteursecteur.Columns[8].Visible = true;
-                dgvvisiteursecteur.Columns[9].Visible = true;
+                dgvvisiteursecteur.Columns[2].Visible = true;
+                dgvvisiteursecteur.Columns[3].Visible = true;
             }
         }
     }
