@@ -19,6 +19,7 @@ namespace GSB_FINAL
          
         private void FMission2_Load(object sender, EventArgs e)
         {
+            
             bsrapport.DataSource = ModeleM2.listrapport();
             datarapport.DataSource = bsrapport;
             bsmedecin.DataSource = ModeleM2.listMedecinVisiteurConnect();
