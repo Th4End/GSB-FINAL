@@ -39,12 +39,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.cboregions = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textville = new System.Windows.Forms.TextBox();
+            this.textnom = new System.Windows.Forms.TextBox();
+            this.textdateembauche = new System.Windows.Forms.TextBox();
+            this.textrue = new System.Windows.Forms.TextBox();
+            this.textprenom = new System.Windows.Forms.TextBox();
+            this.textcp = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.bsregions = new System.Windows.Forms.BindingSource(this.components);
             this.bssecteurs = new System.Windows.Forms.BindingSource(this.components);
@@ -142,48 +142,48 @@
             this.cboregions.Size = new System.Drawing.Size(121, 21);
             this.cboregions.TabIndex = 8;
             // 
-            // textBox2
+            // textville
             // 
-            this.textBox2.Location = new System.Drawing.Point(225, 298);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 9;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textville.Location = new System.Drawing.Point(225, 298);
+            this.textville.Name = "textville";
+            this.textville.Size = new System.Drawing.Size(100, 20);
+            this.textville.TabIndex = 9;
+            this.textville.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // textnom
             // 
-            this.textBox3.Location = new System.Drawing.Point(230, 131);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 10;
+            this.textnom.Location = new System.Drawing.Point(230, 131);
+            this.textnom.Name = "textnom";
+            this.textnom.Size = new System.Drawing.Size(100, 20);
+            this.textnom.TabIndex = 10;
             // 
-            // textBox4
+            // textdateembauche
             // 
-            this.textBox4.Location = new System.Drawing.Point(291, 256);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 11;
+            this.textdateembauche.Location = new System.Drawing.Point(291, 256);
+            this.textdateembauche.Name = "textdateembauche";
+            this.textdateembauche.Size = new System.Drawing.Size(100, 20);
+            this.textdateembauche.TabIndex = 11;
             // 
-            // textBox5
+            // textrue
             // 
-            this.textBox5.Location = new System.Drawing.Point(222, 214);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 12;
+            this.textrue.Location = new System.Drawing.Point(222, 214);
+            this.textrue.Name = "textrue";
+            this.textrue.Size = new System.Drawing.Size(100, 20);
+            this.textrue.TabIndex = 12;
             // 
-            // textBox6
+            // textprenom
             // 
-            this.textBox6.Location = new System.Drawing.Point(246, 171);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 13;
+            this.textprenom.Location = new System.Drawing.Point(246, 171);
+            this.textprenom.Name = "textprenom";
+            this.textprenom.Size = new System.Drawing.Size(100, 20);
+            this.textprenom.TabIndex = 13;
             // 
-            // textBox7
+            // textcp
             // 
-            this.textBox7.Location = new System.Drawing.Point(210, 350);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 14;
+            this.textcp.Location = new System.Drawing.Point(210, 350);
+            this.textcp.Name = "textcp";
+            this.textcp.Size = new System.Drawing.Size(100, 20);
+            this.textcp.TabIndex = 14;
             // 
             // button1
             // 
@@ -193,6 +193,7 @@
             this.button1.TabIndex = 15;
             this.button1.Text = "Enregistrer";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Fcreationvisiteur
             // 
@@ -201,12 +202,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textcp);
+            this.Controls.Add(this.textprenom);
+            this.Controls.Add(this.textrue);
+            this.Controls.Add(this.textdateembauche);
+            this.Controls.Add(this.textnom);
+            this.Controls.Add(this.textville);
             this.Controls.Add(this.cboregions);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -237,12 +238,12 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cboregions;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textville;
+        private System.Windows.Forms.TextBox textnom;
+        private System.Windows.Forms.TextBox textdateembauche;
+        private System.Windows.Forms.TextBox textrue;
+        private System.Windows.Forms.TextBox textprenom;
+        private System.Windows.Forms.TextBox textcp;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.BindingSource bsregions;
         private System.Windows.Forms.BindingSource bssecteurs;
