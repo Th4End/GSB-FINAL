@@ -84,6 +84,24 @@
     <Compile Include="FformulaireModif.Designer.cs">
       <DependentUpon>FformulaireModif.cs</DependentUpon>
     </Compile>
+    <Compile Include="FConsultermesinfos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultermesinfos.Designer.cs">
+      <DependentUpon>FConsultermesinfos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fconsultermesresponsabilités.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fconsultermesresponsabilités.Designer.cs">
+      <DependentUpon>Fconsultermesresponsabilités.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fcreationvisiteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fcreationvisiteur.Designer.cs">
+      <DependentUpon>Fcreationvisiteur.cs</DependentUpon>
+    </Compile>
     <Compile Include="FGestionsVisiteurs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +131,12 @@
     </Compile>
     <Compile Include="FraisForfait.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Fvisiteurssecteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fvisiteurssecteur.Designer.cs">
+      <DependentUpon>Fvisiteurssecteur.cs</DependentUpon>
     </Compile>
     <Compile Include="Laboratoire.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
@@ -154,6 +178,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model_GSB.edmx</DependentUpon>
     </Compile>
+    <Compile Include="modifmotdepasse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifmotdepasse.Designer.cs">
+      <DependentUpon>modifmotdepasse.cs</DependentUpon>
+    </Compile>
     <Compile Include="MOTIF.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
     </Compile>
@@ -183,6 +213,15 @@
     <EmbeddedResource Include="FConnexion.resx">
       <DependentUpon>FConnexion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FConsultermesinfos.resx">
+      <DependentUpon>FConsultermesinfos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fconsultermesresponsabilités.resx">
+      <DependentUpon>Fconsultermesresponsabilités.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fcreationvisiteur.resx">
+      <DependentUpon>Fcreationvisiteur.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FformulaireModif.resx">
       <DependentUpon>FformulaireModif.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +230,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FMenu.resx">
       <DependentUpon>FMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fvisiteurssecteur.resx">
+      <DependentUpon>Fvisiteurssecteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifmotdepasse.resx">
+      <DependentUpon>modifmotdepasse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FMission2.resx">
       <DependentUpon>FMission2.cs</DependentUpon>

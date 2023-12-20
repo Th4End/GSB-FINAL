@@ -16,5 +16,55 @@ namespace GSB_FINAL
         {
             InitializeComponent();
         }
+        private void consulterMesInfosToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            FConsultermesinfos fenetreconsulterMesInfos = new FConsultermesinfos();
+            fenetreconsulterMesInfos.ShowDialog();
+        }
+
+        private void bsGestionvisiteur_CurrentChanged(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FMission1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mofierLeModDePasseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            modifmotdepasse fenetremodifmotdepasse = new modifmotdepasse();
+            fenetremodifmotdepasse.ShowDialog();
+        }
+
+        private void cONSULTERMESRESPONSABILIT2SToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+             Fconsultermesresponsabilités fenetreconsultermesresponsabilités = new Fconsultermesresponsabilités();
+            fenetreconsultermesresponsabilités.ShowDialog();
+        }
+
+        private void visualiserLesVisiteursToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Fvisiteurssecteur Fvisiteurssecteur = new Fvisiteurssecteur();
+            Fvisiteurssecteur.Show();
+        }
+
+        private void créationDuVisiteurToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Fcreationvisiteur Fcreationvisiteur = new Fcreationvisiteur();
+            Fcreationvisiteur.Show();
+        }
     }
 }
