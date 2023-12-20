@@ -46,7 +46,7 @@
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.ChoixLoco = new System.Windows.Forms.ComboBox();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.textBox22 = new System.Windows.Forms.TextBox();
@@ -70,7 +70,9 @@
             this.bsVisiteurInfos = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.bsTypeLoco = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bsVisiteurInfos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsTypeLoco)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -226,21 +228,14 @@
             this.textBox20.TabIndex = 19;
             this.textBox20.Text = "Type de Locomotion";
             // 
-            // comboBox1
+            // ChoixLoco
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "DGC",
-            "DPC",
-            "EGC",
-            "EL",
-            "EPC",
-            "M",
-            "MV"});
-            this.comboBox1.Location = new System.Drawing.Point(163, 346);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 20;
+            this.ChoixLoco.DataSource = this.bsTypeLoco;
+            this.ChoixLoco.FormattingEnabled = true;
+            this.ChoixLoco.Location = new System.Drawing.Point(163, 346);
+            this.ChoixLoco.Name = "ChoixLoco";
+            this.ChoixLoco.Size = new System.Drawing.Size(121, 21);
+            this.ChoixLoco.TabIndex = 20;
             // 
             // textBox18
             // 
@@ -937,6 +932,10 @@
             this.button2.Text = "Annuler";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // bsTypeLoco
+            // 
+            this.bsTypeLoco.CurrentChanged += new System.EventHandler(this.bsTypeLoco_CurrentChanged);
+            // 
             // Mission3_Renseigner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -964,7 +963,7 @@
             this.Controls.Add(this.textBox22);
             this.Controls.Add(this.textBox21);
             this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.ChoixLoco);
             this.Controls.Add(this.textBox20);
             this.Controls.Add(this.textBox19);
             this.Controls.Add(this.textBox17);
@@ -986,6 +985,7 @@
             this.Text = "Mission3_Renseigner";
             this.Load += new System.EventHandler(this.Mission3_Renseigner_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bsVisiteurInfos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsTypeLoco)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1010,7 +1010,7 @@
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox ChoixLoco;
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.TextBox textBox22;
@@ -1034,5 +1034,6 @@
         private System.Windows.Forms.BindingSource bsVisiteurInfos;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.BindingSource bsTypeLoco;
     }
 }

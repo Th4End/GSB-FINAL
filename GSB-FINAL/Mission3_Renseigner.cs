@@ -20,14 +20,21 @@ namespace GSB_FINAL
         }
         private string Nuitées = "", Déjeuner = "", PetitDéj = "", ForfairSoi = "", Diner = "", qttNuitées = "", qttDéjeuner = "", qttPetitDéj = "", qttForfairSoi = "", qttDiner = "", finNuitées = "", finDéjeuner = "", finPetitDéj = "", finForfairSoi = "", finDiner = "";
 
+        private void bsTypeLoco_CurrentChanged(object sender, EventArgs e)
+        {
+            FraisForfait lefraischoisis = (FraisForfait)bsTypeLoco.Current;
+            ChoixLoco = lefraischoisis.id.ToString();
+        }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
-
+        
         private void Mission3_Renseigner_Load(object sender, EventArgs e)
         {
             bsVisiteurInfos.DataSource = ModeleM3.listvisiteur();
+            bsTypeLoco.DataSource = ModeleM3.listfrais();
 
         }
         private void bsVisiteurInfos_CurrentChanged(object sender, EventArgs e)
