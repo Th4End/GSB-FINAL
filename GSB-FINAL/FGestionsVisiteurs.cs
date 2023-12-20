@@ -16,18 +16,6 @@ namespace GSB_FINAL
         {
             InitializeComponent();
         }
-
-      
-
-        
-
-       
-
-        private void perSecteurToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void consulterMesInfosToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             FConsultermesinfos fenetreconsulterMesInfos = new FConsultermesinfos();
@@ -65,6 +53,18 @@ namespace GSB_FINAL
         {
              Fconsultermesresponsabilités fenetreconsultermesresponsabilités = new Fconsultermesresponsabilités();
             fenetreconsultermesresponsabilités.ShowDialog();
+        }
+
+        private void visualiserLesVisiteursToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Fvisiteurssecteur Fvisiteurssecteur = new Fvisiteurssecteur();
+            Fvisiteurssecteur.Show();
+        }
+
+        private void créationDuVisiteurToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Fcreationvisiteur Fcreationvisiteur = new Fcreationvisiteur();
+            Fcreationvisiteur.Show();
         }
     }
 }

@@ -32,6 +32,7 @@ namespace GSB_FINAL
         {
             FMission3 mission3 = new FMission3();
             mission3.Show();
+
         }
     }
 }

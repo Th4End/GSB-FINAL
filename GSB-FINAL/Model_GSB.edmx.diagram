@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="4d2d98ca4ea74d14a9ad5a629bc09f32" Name="Diagram1" ZoomLevel="70">
+      <Diagram DiagramId="4d2d98ca4ea74d14a9ad5a629bc09f32" Name="Diagram1" ZoomLevel="105">
         <EntityTypeShape EntityType="ALaSmeneProModel.Etat" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
         <EntityTypeShape EntityType="ALaSmeneProModel.FAMILLE" Width="1.5" PointX="6" PointY="22.5" IsExpanded="true" />
         <EntityTypeShape EntityType="ALaSmeneProModel.fichefrais" Width="1.5" PointX="5.25" PointY="7.875" IsExpanded="true" />

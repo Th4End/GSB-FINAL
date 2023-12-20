@@ -35,10 +35,9 @@
             this.cONSULTERMESRESPONSABILIT2SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mofierLeModDePasseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualiserLesVisiteursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.perSecteurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.parRegionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.bsGestionvisiteur = new System.Windows.Forms.BindingSource(this.components);
+            this.créationDuVisiteurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bsGestionvisiteur)).BeginInit();
             this.SuspendLayout();
@@ -49,7 +48,8 @@
             this.consulterMesInfosToolStripMenuItem,
             this.cONSULTERMESRESPONSABILIT2SToolStripMenuItem,
             this.mofierLeModDePasseToolStripMenuItem,
-            this.visualiserLesVisiteursToolStripMenuItem});
+            this.visualiserLesVisiteursToolStripMenuItem,
+            this.créationDuVisiteurToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -79,25 +79,10 @@
             // 
             // visualiserLesVisiteursToolStripMenuItem
             // 
-            this.visualiserLesVisiteursToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.perSecteurToolStripMenuItem,
-            this.parRegionToolStripMenuItem});
             this.visualiserLesVisiteursToolStripMenuItem.Name = "visualiserLesVisiteursToolStripMenuItem";
             this.visualiserLesVisiteursToolStripMenuItem.Size = new System.Drawing.Size(130, 20);
             this.visualiserLesVisiteursToolStripMenuItem.Text = "visualiser les visiteurs";
-            // 
-            // perSecteurToolStripMenuItem
-            // 
-            this.perSecteurToolStripMenuItem.Name = "perSecteurToolStripMenuItem";
-            this.perSecteurToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.perSecteurToolStripMenuItem.Text = "par secteur";
-            this.perSecteurToolStripMenuItem.Click += new System.EventHandler(this.perSecteurToolStripMenuItem_Click);
-            // 
-            // parRegionToolStripMenuItem
-            // 
-            this.parRegionToolStripMenuItem.Name = "parRegionToolStripMenuItem";
-            this.parRegionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.parRegionToolStripMenuItem.Text = "par region";
+            this.visualiserLesVisiteursToolStripMenuItem.Click += new System.EventHandler(this.visualiserLesVisiteursToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -115,6 +100,13 @@
             // bsGestionvisiteur
             // 
             this.bsGestionvisiteur.CurrentChanged += new System.EventHandler(this.bsGestionvisiteur_CurrentChanged);
+            // 
+            // créationDuVisiteurToolStripMenuItem
+            // 
+            this.créationDuVisiteurToolStripMenuItem.Name = "créationDuVisiteurToolStripMenuItem";
+            this.créationDuVisiteurToolStripMenuItem.Size = new System.Drawing.Size(120, 20);
+            this.créationDuVisiteurToolStripMenuItem.Text = "création du visiteur";
+            this.créationDuVisiteurToolStripMenuItem.Click += new System.EventHandler(this.créationDuVisiteurToolStripMenuItem_Click);
             // 
             // FMission1
             // 
@@ -144,8 +136,7 @@
         private System.Windows.Forms.ToolStripMenuItem cONSULTERMESRESPONSABILIT2SToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mofierLeModDePasseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem visualiserLesVisiteursToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem perSecteurToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem parRegionToolStripMenuItem;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem créationDuVisiteurToolStripMenuItem;
     }
 }

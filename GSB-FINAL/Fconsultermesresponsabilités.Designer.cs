@@ -38,6 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.bsregionsres = new System.Windows.Forms.BindingSource(this.components);
             this.bsregionstravai = new System.Windows.Forms.BindingSource(this.components);
+            this.Fermer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvregionsresp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsResponsabilites)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvregionstrav)).BeginInit();
@@ -94,12 +95,23 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Regions ou je travaille :";
             // 
+            // Fermer
+            // 
+            this.Fermer.Location = new System.Drawing.Point(670, 406);
+            this.Fermer.Name = "Fermer";
+            this.Fermer.Size = new System.Drawing.Size(75, 23);
+            this.Fermer.TabIndex = 5;
+            this.Fermer.Text = "Fermer";
+            this.Fermer.UseVisualStyleBackColor = true;
+            this.Fermer.Click += new System.EventHandler(this.Fermer_Click);
+            // 
             // Fconsultermesresponsabilités
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Fermer);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -128,5 +140,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.BindingSource bsregionsres;
         private System.Windows.Forms.BindingSource bsregionstravai;
+        private System.Windows.Forms.Button Fermer;
     }
 }

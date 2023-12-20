@@ -35,6 +35,10 @@ namespace GSB_FINAL
         {
             return maConnexion.Region.ToList();
         }
+        public static List<Secteur> listsecteur()
+        {
+            return maConnexion.Secteur.ToList();
+        }
         private static string GetMd5Hash(string PasswdSaisi)
         {
             byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(PasswdSaisi);
@@ -72,11 +76,11 @@ namespace GSB_FINAL
         {
             string message = "";
             string mdph = GetMd5Hash(password);
-            if (string.Equals(ModeleConnexion.LeVisiteurConnecte.password, mdph) && string.Equals(nouveaupassword, confipassword))
+            if (string.Equals(mdph,ModeleConnexion.LeVisiteurConnecte.password.Substring(2).ToString(),StringComparison.CurrentCultureIgnoreCase ) && string.Equals(nouveaupassword, confipassword))
             {
                 try
                 {
-                    string newmdph = GetMd5Hash(nouveaupassword);
+                    string newmdph = string.Concat("0x", GetMd5Hash(nouveaupassword));
                     ModeleConnexion.LeVisiteurConnecte.password = newmdph;
                     ModeleConnexion.maConnexion.SaveChanges();
                     message = "mot de passe modifié";

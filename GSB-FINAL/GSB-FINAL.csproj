@@ -42,6 +42,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -72,6 +73,18 @@
     <Compile Include="FConnexion.Designer.cs">
       <DependentUpon>FConnexion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FcreationRapport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FcreationRapport.Designer.cs">
+      <DependentUpon>FcreationRapport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FformulaireModif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FformulaireModif.Designer.cs">
+      <DependentUpon>FformulaireModif.cs</DependentUpon>
+    </Compile>
     <Compile Include="FConsultermesinfos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +96,12 @@
     </Compile>
     <Compile Include="Fconsultermesresponsabilités.Designer.cs">
       <DependentUpon>Fconsultermesresponsabilités.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fcreationvisiteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fcreationvisiteur.Designer.cs">
+      <DependentUpon>Fcreationvisiteur.cs</DependentUpon>
     </Compile>
     <Compile Include="FGestionsVisiteurs.cs">
       <SubType>Form</SubType>
@@ -113,6 +132,12 @@
     </Compile>
     <Compile Include="FraisForfait.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Fvisiteurssecteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fvisiteurssecteur.Designer.cs">
+      <DependentUpon>Fvisiteurssecteur.cs</DependentUpon>
     </Compile>
     <Compile Include="Laboratoire.cs">
       <DependentUpon>Model_GSB.tt</DependentUpon>
@@ -195,11 +220,23 @@
     <EmbeddedResource Include="Fconsultermesresponsabilités.resx">
       <DependentUpon>Fconsultermesresponsabilités.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Fcreationvisiteur.resx">
+      <DependentUpon>Fcreationvisiteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FformulaireModif.resx">
+      <DependentUpon>FformulaireModif.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FGestionsVisiteurs.resx">
       <DependentUpon>FGestionsVisiteurs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FMenu.resx">
       <DependentUpon>FMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fvisiteurssecteur.resx">
+      <DependentUpon>Fvisiteurssecteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifmotdepasse.resx">
+      <DependentUpon>modifmotdepasse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FMission2.resx">
       <DependentUpon>FMission2.cs</DependentUpon>
@@ -209,9 +246,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mission3_Renseigner.resx">
       <DependentUpon>Mission3_Renseigner.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="modifmotdepasse.resx">
-      <DependentUpon>modifmotdepasse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
